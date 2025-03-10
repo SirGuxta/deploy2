@@ -1,0 +1,212 @@
+
+@font-face {
+    font-family: 'teste';
+    src: url('./../fonts/BLAC.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+body header {
+    display: grid;
+
+    justify-items: center;
+}
+
+@media (max-width: 700px){
+
+    body header .fundo {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    body header .div_logo {
+        position: absolute;
+        top: 35vh;
+
+        display: grid;
+        justify-items: center;
+    }
+
+    body header .div_logo .logo {
+        width: 55vw;
+        height: 55vw;
+
+        border: 6px #8B0000 solid;
+        border-radius: 100%;
+    }
+
+    body header .div_logo .te {
+        font-family: Arial;
+    }
+
+    body header .div_logo .nome {
+        font-size: 35px;
+        font-family: 'teste', sans-serif;
+        margin-bottom: 1vh;
+
+        color: white;
+    }
+
+    body header .div_logo .titulo {
+        margin: 0;
+        font-size: 20px;
+
+        color: #b40a0a;
+    }
+
+    body header .agendamento {
+        background-color: #1A1A1A;
+        
+        width: 100vw;
+
+        padding-bottom: 10vh;
+
+        display: grid;
+        justify-items: center;
+    }
+
+    body header .agendamento .botao_agendamento {
+        
+        text-decoration: none;
+        font-family: Arial;
+        font-size: 18px;
+        color: white;
+
+        padding: 10px;
+
+        border-radius: 30px;
+
+        background-color: #8B0000;
+
+        margin-top: 35vh;
+
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+    }
+
+    body header .agendamento .botao_agendamento img {
+        width: 20px;
+        border-radius: 100%
+    }
+
+    body main {
+
+        display: grid;
+
+
+    }
+
+    body main .servicos {
+        
+        width: 100vw;
+
+        display: grid;
+        justify-items: center;
+
+        font-family: arial;
+        color: white;
+
+        background-image: url('../img/fundo_main.jpeg');
+        background-size: cover;
+
+        padding-bottom: 8vh;
+    }
+
+    body main .servicos .titulo {
+
+        margin-top: 10vh;
+    }
+
+    body main .servicos div {
+        display: flex;
+        justify-items: center;
+
+        gap: 5vw;
+    }
+
+    body main .servicos div a {
+        display: grid;
+        justify-items: center;
+    }
+
+    body main .servicos div a img {
+        width: 35vw;
+
+        border: 4px #8B0000 solid;
+        border-radius: 100%;
+    }
+
+    body main .avaliacoes {
+        display: grid;
+        justify-items: center;
+
+        background-color: #8B0000;
+
+        font-family: arial;
+        color: white;
+
+        gap: 5vh;
+
+        padding-bottom: 20vh;
+    }
+
+    body main .avaliacoes .titulo {
+
+        margin-top: 8vh;
+    }
+
+    body main .avaliacoes .pre_carrosel {
+        display: flex;
+        align-items: center;
+
+        gap: 2vw;
+    }
+
+    body main .avaliacoes .pre_carrosel .ant, .dep {
+
+        color: black;
+
+        position: absolute;
+
+        margin-top: 140px;
+    }
+
+    body main .avaliacoes .pre_carrosel .ant {
+        right: 86vw;
+    }
+
+    body main .avaliacoes .pre_carrosel .dep {
+        left: 86vw;
+    }
+
+    body main .avaliacoes .pre_carrosel .carrosel {
+        display: flex;
+        justify-content: center;
+    }
+
+    body main .avaliacoes .pre_carrosel .carrosel a {
+        width: 80vw;
+        height: 140px;
+
+        border-radius: 10px;
+
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .elm1 {
+        position: absolute;
+    }
+
+    .a1, .a2 {
+        display: none;
+        position: absolute;
+
+        left: 400px;
+    }
+}
