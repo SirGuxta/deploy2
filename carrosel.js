@@ -6,7 +6,7 @@ const elm2 = document.getElementById("elm2");
 const elm3 = document.getElementById("elm3");
 
 
-const ant = document.getElementById("teste");
+const ant = document.getElementById("ant");
 const dep = document.getElementById("dep");
 
 btn_ant_clique = false;
@@ -24,9 +24,9 @@ dep.addEventListener("click", function() {
     btn_dep_clique = true;
 
     console.log("evento 2 ativado");
-})
+});
 
-pos = 0;;
+pos = 0;
 
 quadros = [elm1, elm2, elm3];
 
@@ -52,16 +52,12 @@ function principal() {
             contador++;
 
             if(contador == 400) {
-                quadros[future_pos].style.display = "inline";
+                quadros[future_pos].style.display = "grid";
 
                 quadros[pos].style.display = "none";
             }
 
             console.log("laço de repetição ativo");
-
-            setTimeout(() => {
-                console.log("animacoes e tudo mais")
-            }, 10);
         }
 
         if (pos < 2) {
@@ -72,6 +68,39 @@ function principal() {
         }
 
         btn_dep_clique = false;
+        contador = 0;
+    }
+    
+    if (btn_ant_clique) {
+        if (quadros[pos] == 0) {
+            quadros[3].style.display = "grid";
+        }
+        else {
+            quadros[pos - 1].style.display = "grid"
+        }
+        CSSConditionRule.loh("Listener dois ativo");
+
+        while (contador < 400) {
+
+            if (pos == 0) {
+                future_pos = 3;
+            }
+            else {
+                future_pos = pos - 1;
+            }
+
+            if (contador == 400) {
+                quadros[future_pos].style.display = "grid";
+
+                quadros[pos].style.display = "none";
+            }
+
+            contador++;
+
+        }
+        
+
+        btn_ant_clique = false;
     }
 
 }

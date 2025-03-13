@@ -115,6 +115,8 @@ body header {
         background-image: url('../img/fundo_main.jpeg');
         background-size: cover;
 
+        gap: 5vh;
+
         padding-bottom: 8vh;
     }
 
@@ -133,6 +135,8 @@ body header {
     body main .servicos div a {
         display: grid;
         justify-items: center;
+
+        gap: 2vh;
     }
 
     body main .servicos div a img {
@@ -140,6 +144,22 @@ body header {
 
         border: 4px #8B0000 solid;
         border-radius: 100%;
+    }
+
+    body main .servicos div a button {
+
+        border-radius: 20px;
+        padding: 1vh;
+
+        width: 30vw;
+
+        font-family: arial;
+        font-size: 16px;
+        font-weight: bold;
+
+        color: black;
+        background-color: #8B0000;
+        border: none;
     }
 
     body main .avaliacoes {
@@ -153,7 +173,7 @@ body header {
 
         gap: 5vh;
 
-        padding-bottom: 20vh;
+        padding-bottom: 30vh;
     }
 
     body main .avaliacoes .titulo {
@@ -174,7 +194,7 @@ body header {
 
         position: absolute;
 
-        margin-top: 140px;
+        margin-top: 180px;
     }
 
     body main .avaliacoes .pre_carrosel .ant {
@@ -191,15 +211,52 @@ body header {
     }
 
     body main .avaliacoes .pre_carrosel .carrosel a {
+        justify-items: center;
+
         width: 80vw;
-        height: 140px;
+        padding-bottom: 2vh;
 
         border-radius: 10px;
 
         background-color: rgba(0, 0, 0, 0.4);
     }
 
+    body main .avaliacoes .pre_carrosel .carrosel a p {
+        width: 60vw;
+
+        font-size: 15px;
+    }
+
+    body main .localizacao {
+        width: 100vw;
+        height: 10vh;
+
+        display: none;
+
+        background-color: #1A1A1A;
+    }
+
+    footer {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+        gap: 0;
+
+        font-family: arial;
+        font-weight: 400;
+        background-color: #1A1A1A;
+
+        padding: 3vw;
+    }
+    
+    footer p {
+        margin: 5px;
+        color: white;
+    }
+
     .elm1 {
+        display: grid;
+
         position: absolute;
     }
 
@@ -208,5 +265,50 @@ body header {
         position: absolute;
 
         left: 400px;
+    }
+
+    .minhaJanela {
+        position: fixed;
+
+        visibility: hidden;
+
+        width: 100vw;
+        height: 100vh;
+
+        top: 0vh;
+        left: 0vw;
+
+        background-color: white;
+
+        font-family: arial;
+        color: rgba(0, 0, 0, 0.6);
+
+        display: grid;
+        justify-items: center;
+    }
+
+    .minhaJanela .cabecalho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 80vw;
+        height: 10vh
+    }
+
+    .minhaJanela .cabecalho .btn_fechar {
+
+        font-weight: 10;
+    }
+
+    .minhaJanela .linha {
+
+        width: 95vw;
+        height: 1px;
+
+        position: absolute;
+        top: 10vh;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.6);
     }
 }
