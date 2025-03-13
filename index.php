@@ -63,7 +63,7 @@
             <h2 class="titulo">Nossas Avaliações</h2>
 
             <div class="pre_carrosel">
-                <a class="ant" id="ant"><h1> < </h1></a>
+                <a class="ant" id="teste"><h1> < </h1></a>
                 <div class="carrosel">
                     <a class="elm1" id="elm1">
                         <h2>Carlos Menezes</h2>

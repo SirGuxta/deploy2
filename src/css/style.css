@@ -195,6 +195,8 @@ body header {
         position: absolute;
 
         margin-top: 180px;
+
+        z-index: 2
     }
 
     body main .avaliacoes .pre_carrosel .ant {
